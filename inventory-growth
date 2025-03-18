@@ -67,11 +67,11 @@ controller_percent_memory_capacity=0.5
 # AAP Controller - optional
 # -------------------------
 # To use the postinstall feature you need to set these variables
-controller_postinstall: true
-controller_license_file: /home/admin/manifest/aap-manifest.zip
-controller_postinstall_dir: /home/admin/ansible-cac/postinstall
-controller_postinstall_repo_url: "git@github.com:kersmaka/ansible-cac.git"
-conrtoller_postinstall_repo_ref: master
+controller_postinstall=true
+controller_license_file=/home/admin/manifest/aap-manifest.zip
+controller_postinstall_dir=/home/admin/ansible-cac/postinstall
+controller_postinstall_repo_url="git@github.com:kersmaka/ansible-cac.git"
+conrtoller_postinstall_repo_ref=master
 
 # AAP Automation Hub
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-hub-variables
