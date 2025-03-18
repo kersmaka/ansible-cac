@@ -11,31 +11,31 @@
 # This section is for your AAP Gateway host(s)
 # -----------------------------------------------------
 [automationgateway]
-192.168.0.135
+cansible.com
 
 # This section is for your AAP Controller host(s)
 # -----------------------------------------------------
 [automationcontroller]
-192.168.0.135
+cansible.com
 
 # This section is for your AAP Automation Hub host(s)
 # -----------------------------------------------------
 [automationhub]
-192.168.0.135
+cansible.com
 
 # This section is for your AAP EDA Controller host(s)
 # -----------------------------------------------------
 [automationeda]
-192.168.0.135
+cansible.com
 
 # This section is for the AAP database
 # -----------------------------------------------------
 [database]
-192.168.0.135
+cansible.com
 
 [all:vars]
 # Ansible
-#192.168.0.135 ansible_user=admin
+#cansible.com ansible_user=admin
 ansible_connection=local
 
 # Common variables
@@ -53,14 +53,14 @@ redis_mode=standalone
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-gateway-variables
 # -----------------------------------------------------
 gateway_admin_password=redhat
-gateway_pg_host=192.168.0.135
+gateway_pg_host=cansible.com
 gateway_pg_password=redhat
 
 # AAP Controller
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-controller-variables
 # -----------------------------------------------------
 controller_admin_password=redhat
-controller_pg_host=192.168.0.135
+controller_pg_host=cansible.com
 controller_pg_password=redhat
 controller_percent_memory_capacity=0.5
 
@@ -68,7 +68,7 @@ controller_percent_memory_capacity=0.5
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-hub-variables
 # -----------------------------------------------------
 hub_admin_password=redhat
-hub_pg_host=192.168.0.135
+hub_pg_host=cansible.com
 hub_pg_password=redhat
 hub_seed_collections=false
 
@@ -76,5 +76,5 @@ hub_seed_collections=false
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#event-driven-ansible-controller
 # -----------------------------------------------------
 eda_admin_password=redhat
-eda_pg_host=192.168.0.135
+eda_pg_host=cansible.com
 eda_pg_password=redhat
