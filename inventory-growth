@@ -42,39 +42,54 @@ ansible_connection=local
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-general-inventory-variables
 # -----------------------------------------------------
 postgresql_admin_username=postgres
-postgresql_admin_password=redhat
+#postgresql_admin_password=redhat
 
 registry_username=kersmaka3
-registry_password=Anth2&32
+#registry_password=Anth2&32
 
 redis_mode=standalone
 
 # AAP Gateway
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-gateway-variables
 # -----------------------------------------------------
-gateway_admin_password=redhat
+#gateway_admin_password=redhat
 gateway_pg_host=cansible.com
-gateway_pg_password=redhat
+#gateway_pg_password=redhat
 
 # AAP Controller
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-controller-variables
 # -----------------------------------------------------
-controller_admin_password=redhat
+#controller_admin_password=redhat
 controller_pg_host=cansible.com
-controller_pg_password=redhat
+#controller_pg_password=redhat
 controller_percent_memory_capacity=0.5
+
+# AAP Controller - optional
+# -------------------------
+# To use the postinstall feature you need to set these variables
+controller_postinstall=true
+controller_license_file=/home/admin/manifest/aap-manifest.zip
+controller_postinstall_dir=/home/admin/ansible-cac/postinstall
+controller_postinstall_repo_url="git@github.com:kersmaka/ansible-cac.git"
+conrtoller_postinstall_repo_ref=master
 
 # AAP Automation Hub
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#ref-hub-variables
 # -----------------------------------------------------
-hub_admin_password=redhat
+#hub_admin_password=redhat
 hub_pg_host=cansible.com
-hub_pg_password=redhat
+#hub_pg_password=redhat
 hub_seed_collections=false
+
+# AAP Automation Hub - optional
+# -----------------------------
+# To use the posptinstall feature you need to set these variables
+hub_postinstall=true
+hub_postinstall_dir=/home/admin/ansible-cac/postinstall
 
 # AAP EDA Controller
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/containerized_installation/appendix-inventory-files-vars#event-driven-ansible-controller
 # -----------------------------------------------------
-eda_admin_password=redhat
+#eda_admin_password=redhat
 eda_pg_host=cansible.com
-eda_pg_password=redhat
+#eda_pg_password=redhat
