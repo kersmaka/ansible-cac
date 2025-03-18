@@ -1,5 +1,0 @@
----
-aap_teams:
-  - name: redhat
-    description: Red Hatters with access to Autodotest
-    organization: Autodotes
